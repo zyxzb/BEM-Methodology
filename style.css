@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+/* HEADER */
+
+.header {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.button {
+    width: 120px;
+    height: 50px;
+    padding: 10px 10px;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid gray;
+
+}
+
+.button__header {
+    position: absolute;
+    bottom: 12vh;
+    right: 12vw;
+    background-color: rgba(121, 121, 121, 0.567);
+    backdrop-filter: blur(1px);
+    font-weight: bold;
+}
+
+.header__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__text {
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    color: aliceblue;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* NAV */
+
+.nav {
+    max-width: 90vw;
+    flex-direction: column;
+    gap: 50px;
+    display: flex;
+    margin: 0 auto 30px;
+}
+
+.nav__top {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.nav__company-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav__logo {
+    height: 60px;
+}
+
+.nav__company-title {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.nav__navbar {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    padding: 10px;
+
+}
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav__list-item:nth-child(2) {
+    opacity: 0.4;
+}
+
+.nav__search {
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+}
+
+.nav__input {
+    height: 100%;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    padding-left: 40px;
+    outline: none;
+    border: 1px solid gray;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background: url("./images/magnifying-glass-solid.svg") no-repeat 5px;
+    background-size: 28px;
+
+}
+
+.button__nav {
+    height: 100%;
+    color: black;
+    font-size: 1rem;
+    border-radius: 0 5px 5px 0;
+
+}
+
+/* MAIN */
+
+.main {
+    max-width: 85vw;
+    flex-direction: column;
+    gap: 60px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.article__box-info {
+    display: flex;
+    gap: 10px;
+}
+
+.article__date,
+.article__author-name {
+    font-weight: bold;
+}
+
+.article__text {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.button__article {
+    align-self: end;
+    width: max-content;
+    color: black;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    width: 100%;
+    padding: 35px 15vw;
+    height: 30px;
+    gap: 40px;
+    align-items: center;
+    border-top: 1px solid gray;
+    margin-top: 50px;
+
+}
+
+/* Media Queries  */
+
+@media (max-width: 768px) {
+    .header__title--small {
+        font-size: 36px;
+    }
+
+    .header__subtitle--small {
+        font-size: 22px;
+    }
+
+    .nav__top--mobile {
+        flex-direction: column;
+    }
+
+    .nav__list--mobile {
+        gap: 12vw;
+    }
+}
